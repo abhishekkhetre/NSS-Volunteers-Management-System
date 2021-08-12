@@ -1,0 +1,33 @@
+//display_menu route
+app.get("/display_menu", (req, res) => {
+    res.render("display_menu");
+});
+
+//activity details route
+app.get("/display_activity", (req, res) => {
+    db.query("Select * FROM activity", function (err, act_detail) {
+        if (err) console.log(err);
+        else 
+            return res.render("display_activity", { acts: act_detail });
+    });
+});
+
+//activity details post route
+app.post("/display_attendance", (req, res) => {
+    console.log(req.body)
+    var a = 'activity_';
+    var b = req.body.act;
+    var actname = a.concat(b);
+    db.query("select * from volunteer where " + actname + " = '1'",function(err,vol_detail){
+        if(err) console.log(err)
+        else{
+            db.query("Select * from activity where activity_no = "+ b +" ",function(err,act_value){
+                if(err) console.log(err)
+                else{
+                    return res.render("display_attendance",{ items : vol_detail , acts : act_value , strength : vol_detail.length})
+                }
+            })
+            
+        }
+    });
+});

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Activity Details</title>
+    <link rel="stylesheet" href="css/activity.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div id="middle">
+
+        <div class="sticky-top">
+            <nav class="navbar navbar-expand-lg" style="background-color: #050936; height: max-content; z-index: 3;">
+                <a class="navbar-brand">NSS MCOE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/homepage">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/activity">Attendance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/display_menu">Display</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+if (message)
+    <div class="alert alert-danger" role="alert" style="text-align: center;"> #{message}</div>
+
+<div id="header" align="center">Activity Details</div>
+<div class="form-style">
+    <form name="activity" method="post" action="/activity" onsubmit="return funcValidate();" autocomplete="off">
+        <table align="center" width="800">
+            <tr>
+                <td> &nbsp;Activity No.</td>
+                <td>
+                    <div class="input-group"><input type="text" name="act"> </div>
+                </td>
+            </tr>
+            <tr>
+                <td width="125"> &nbsp;Activity name </td>
+                <td width="180">
+                    <div class="input-group"><input type="text" name="aname" size="20"></div>
+                </td>
+            </tr>
+            <tr>
+                <td width="125"> &nbsp;Location </td>
+                <td width="180">
+                    <div class="input-group"><input type="text" name="location" size="20"></div>
+                </td>
+            </tr>
+            <tr>
+                <td width="125"> &nbsp;Activity Info </td>
+                <td width="180">
+                    <div class="input-group"><input type="text" name="info" size="250"></div>
+                </td>
+            </tr>
+            <tr>    
+                <td> </td>
+                <td> 
+                     <input type="submit" name="Submit" value="Submit" class="btn" id="submit">&nbsp&nbsp
+                     <input type="reset" name="Reset" value="Reset" class="btn" id="reset">
+                </td>
+             
+            </tr>    
+        </table>
+    </form>
+</div>
+<script src="js/activity.js"></script>
+    </div>
+    </body>
+</html>

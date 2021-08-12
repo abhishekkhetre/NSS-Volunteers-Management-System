@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <link rel="stylesheet" href="css/display_activity.css">
+    <link rel="script" href="js/activity.js">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+
+
+<body style=" background-color: #02052e;">
+
+<!-- Navigation Bar -->
+
+
+        <div class="sticky-top">
+            <nav class="navbar navbar-expand-lg" style="background-color: #050936; height: max-content; z-index: 3;">
+                <a class="navbar-brand">NSS MCOE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="/homepage">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/activity">Attendance</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/display_menu">Display</a>
+              </li>
+              </ul>
+            </div>
+            </nav>
+        </div>
+
+<!-- Table -->
+<form name="activity_details" method="POST" action="/display_attendance">
+    <div class="page">
+        <h1>Activity Details</h1>
+        <table class="layout display responsive-table">
+            <thead>
+                <tr>
+                    <th>Activity No</th>
+                    <th>Activity Name</th>
+                    <th>Location</th>
+                    <th>Info</th>
+                    <th>Day & Date</th>
+                    <th>Attendance</th>
+                </tr>
+            </thead>
+            <tbody>
+                each act in acts 
+                    tr
+                    td=act.activity_no
+                    td=act.activity_name
+                    td=act.location
+                    td=act.information
+                    td=act.date
+                        <td class="actions">
+                              <button type="submit" name="act" class="btn btn-outline-primary " value="#{ act.activity_no }">Check</button>
+                        </td>
+            </tbody>
+        </table>
+    </div>    
+</form>
+</body>
+</html>

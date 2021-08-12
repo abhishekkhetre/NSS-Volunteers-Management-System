@@ -1,0 +1,171 @@
+.navbar-brand{
+    /* transition: 0.5s; */
+    color: rgb(255, 255, 255);
+  
+  }
+  .navbar-brand:hover{
+    color : rgb(255, 255, 255);
+    /* font-size: 140%; */
+    font-weight: bold;
+  
+  }
+  
+  .nav-link{
+    color: rgb(252, 252, 252);
+  }
+  
+  .nav-link:hover{
+    color: rgb(238, 255, 0);
+    transition: 0.2s;
+  }
+  
+#middle{
+    background-color:  #09104e;
+    height: 90rem;
+}
+
+body 
+{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+text-align: center;
+background-color: #02052e;
+color: white;   
+font-size: 80px;
+font-family: cursive;
+}
+
+.navbar-brand{
+  /* transition: 0.5s; */
+  color: rgb(255, 255, 255);
+
+}
+.navbar-brand:hover{
+  color : rgb(255, 255, 255);
+  /* font-size: 140%; */
+  font-weight: bold;
+
+}
+
+.nav-link{
+  color: rgb(252, 252, 252);
+}
+
+.nav-link:hover{
+  color: rgb(238, 255, 0);
+  transition: 0.2s;
+}
+
+
+  
+
+  
+a
+{
+    color: #739931;
+}
+
+.page
+{
+    /* max-width: 60em; */
+    margin-top: 45px;
+    font-size: 80px;
+    background-color: #02052e;
+    align-content: center;
+}
+
+
+
+table {
+    width: 98%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    font-family: cursive;
+    font-size: 25px;
+    text-align: center;
+    border: solid 2px black;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #ff0000;
+    color: white;
+    border-bottom: solid 3px black;
+    font-size: 28px;;
+}
+
+
+tr{
+    background-color: #ebe4e4;
+}
+tr:hover {
+         background-color: #ffffff;
+         }
+
+
+#cardcont{
+    background-color: #02052e;
+    margin-top: 0%;
+    padding: 0px 50px;
+    font-family: cursive;
+
+}
+
+#atheading{
+    font-size: 60px;
+}
+
+#actdetailsheading{
+    display: block;
+    background-color: #02052e;
+    color: white;   
+    margin-top: 15px;
+    font-size: 60px;
+    font-family: cursive;
+    padding: 3px;
+}
+
+.card-group
+{
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+    margin-top: 20px;
+}
+
+
+.actions{
+    display: flow-root;
+    text-align: center;
+}
+
+#submit{
+    margin-top: 25px;
+    margin-left: 620px;
+    /* justify-self: center; */
+    padding: 10px;
+    font-size: 25px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    width: 180px;
+    height: 70px;
+    border: 3px solid;
+}
+
+#submit:hover{
+    background-color: red;
+    color: white;
+}

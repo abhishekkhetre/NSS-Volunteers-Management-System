@@ -1,0 +1,97 @@
+.container {
+    position: relative;
+    width: 50%; 
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    padding: 5px;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #09104e;
+    color: white;
+    font-size: 18px;
+    padding: 18px 32px;
+    align-self: auto;
+  }
+  #admintitle{
+      text-align: center;
+  }
+  #adminsubtitle{
+      text-align: center;
+  }
+  .loginform{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+
+
+  .button {
+    border-radius: 30px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    padding: 8px;
+    width: 160px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 30px;
+    align-self: center;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  

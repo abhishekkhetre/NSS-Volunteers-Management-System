@@ -1,0 +1,115 @@
+#welcome{
+    font-family: cursive;
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+#welcome:hover{
+  color: rgb(255, 52, 52);
+}
+
+.navbar-brand{
+  /* transition: 0.5s; */
+  color: rgb(255, 255, 255);
+
+}
+.navbar-brand:hover{
+  color : rgb(255, 255, 255);
+  /* font-size: 140%; */
+  font-weight: bold;
+
+}
+
+.nav-link{
+  color: rgb(252, 252, 252);
+}
+
+.nav-link:hover{
+  color: rgb(238, 255, 0);
+  transition: 0.2s;
+}
+
+#middle{
+  background-color:  #09104e;
+  height: 90rem;
+}
+
+body 
+{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+text-align: center;
+background-color: #02052e;
+color: white;   
+font-size: 80px;
+font-family: cursive;
+}
+
+.navbar-brand{
+/* transition: 0.5s; */
+color: rgb(255, 255, 255);
+
+}
+.navbar-brand:hover{
+color : rgb(255, 255, 255);
+/* font-size: 140%; */
+font-weight: bold;
+
+}
+
+.nav-link{
+color: rgb(252, 252, 252);
+}
+
+.nav-link:hover{
+color: rgb(238, 255, 0);
+transition: 0.2s;
+}
+
+
+
+
+
+.container{
+    margin-top: 60px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    width: 90%; 
+}
+.but{
+    width: 41.5%;
+    margin: 4%;
+    padding-top: 2%;
+    padding-bottom: 3%; /* Same as width, sets height */
+    /* margin-bottom: 4%; (100-32*3)/2 */
+    /* margin: 2px; */
+    position: relative;
+    font-size: 40px;
+    border-radius: 20px;
+    
+}
+
+.icon{
+  font-size: 55px;
+}
+
+.but:hover{
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+.anchor{
+  color: black;
+}
+.anchor:hover{
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NSS Registration Form</title>
+    <link rel="stylesheet" href="css/nssreg.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div id="middle">
+
+        <div class="sticky-top">
+            <nav class="navbar navbar-expand-lg" style="background-color: #050936; height: max-content; z-index: 3;">
+                <a class="navbar-brand">NSS MCOE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="/homepage">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/activity">Attendance</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/display_menu">Display</a>
+              </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+if (error)
+    <div class="alert alert-danger" role="alert" style="text-align: center;"> #{error}</div>
+if (message)
+    <div class="alert alert-success" role="alert" style="text-align: center;"> #{message}</div>
+
+<div  id="header" align="center">Registration Form</div>
+<div class="form-style">
+    <h2 align="center">All fields are mandatory</h2>
+        <form name="nssForm" method="post" action="/nssreg" OnSubmit="return funcValidate();" autocomplete="off">
+            <table align="center" width="600" >
+                <tr>
+                    <td width="125"> &nbsp;Name </td>
+                    <td width="180">
+                        <div class="input-group"><input type="text" name="fname" size="20"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;Gender:</td>
+                    <td>
+                        <span id="gen"><input type="radio" name="gender" value="Male" id="male"> Male
+                        <input type="radio" name="gender" value="Female" id="female"> Female    
+                    </td>
+                </tr>
+                <tr>
+                    <td> &nbsp;Email</td>
+                    <td>
+                        <div class="input-group"><input type="text" name="email"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td> &nbsp;Year: </td>
+                    <td>
+                        <div class="input-group" >
+                            <select id="year" name="year">
+                                <option value="">Choose Year</option>
+                                <option value="SE">SE</option>
+                                <option value="TE">TE</option>
+                                <option value="BE">BE</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td> &nbsp;Department:</td>
+                    <td>
+                        <div class="input-group">
+                            <select id="dept" name="dept">
+                                <option value="">Choose Department</option>
+                                <option value="COMP">Computer</option>
+                                <option value="IT">Information Technology</option>
+                                <option value="MECH">Mechanical</option>
+                                <option value="ELEC">Electrical</option>
+                                <option value="ENTC">Electronics & Telecommunication</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td> &nbsp;Shift:</td>
+                    <td>
+                        <div class="input-group">
+                            <select id="shift" name="shift">
+                                <option value="">Choose Shift</option>
+                                <option value="First">First</option>
+                                <option value="Second">Second</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;College Roll No.:</td>
+                    <td>
+                        <div class="input-group"><input type="text" name="clgroll"> </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td> &nbsp;Mobile No.:</td>
+                    <td>
+                        <div class="input-group"><input type="text" name="phone"> </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td> &nbsp;PRN No.:</td>
+                    <td>
+                        <div class="input-group"><input type="text" name="prn"> </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> &nbsp;Eligibility No.:</td>
+                    <td>
+                        <div class="input-group"><input type="text" name="eligibility"> </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> &nbsp;Category:</td>
+                    <td>
+                        <div class="input-group"><input type="text" name="cat"> </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> &nbsp;Aadhar No.:</td>
+                    <td>
+                        <div class="input-group"><input type="text" name="aadhar"> </div>
+                    </td>
+                </tr>
+           
+                <tr>    
+                   <td> </td>
+                   <td> 
+                        <input type="submit" name="Submit" value="Submit" class="btn" id="submit">&nbsp&nbsp
+                        <input type="reset" name="Reset" value="Reset" class="btn" id="reset">
+                   </td>
+                
+                </tr>    
+                    <!-- <input class="btn btn-primary" type="submit" name="Submit" value="Submit" id="submit">&nbsp&nbsp -->
+                    <!-- <input class="btn btn-primary" type="reset" name="Reset" value="Reset" id="reset" > -->
+                    
+                </table>    
+                </form>
+            </div>
+            
+            <script src="js/nssreg.js"></script>
+        </div>
+        </body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTENDANCE</title>
+    <link rel="stylesheet" href="css/attendance.css">
+    <link rel="script" href="js/activity.js">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+
+
+<body style=" background-color: #02052e;">
+
+<!-- Navigation Bar -->
+    
+
+
+        <div class="sticky-top">
+            <nav class="navbar navbar-expand-lg" style="background-color: #050936; height: max-content; z-index: 3;">
+                <a class="navbar-brand">NSS MCOE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/homepage">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/activity">Attendance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/display_menu">Display</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+<!-- Activity Details -->
+
+    <h1 id="actdetailsheading"> Activity Details</h1>
+<div class="col d-flex justify-content-center" id="cardcont">
+    <div class="card-group">
+        <div class="card-deck mt-4">
+        each act in acts
+            <div class="card mb-3" style="width: 38rem; border= solid 2px black">
+                <div class="card-header text-white" style="font-size: 30px; background-color: #ff0000; color= white;">Activity Number</div>
+                <div class="card-body">
+                <h5 class="card-title" style="font-size: 30px;">#{act.activity_no}</h5>
+                </div>
+            </div>
+    
+            <div class="card mb-3" style="width: 38rem; border= solid 2px black">
+                <div class="card-header text-white" style="font-size: 30px; background-color: #ff0000;">Activity Name</div>
+                <div class="card-body">
+                <h5 class="card-title" style="font-size: 30px;">#{act.activity_name}</h5>
+                </div>
+            </div>
+
+            <div class="card mb-3" style="width: 38rem; border= solid 2px black">
+                <div class="card-header text-white" style="font-size: 30px; background-color: #ff0000;">Location</div>
+                <div class="card-body">
+                <h5 class="card-title" style="font-size: 30px;">#{act.location}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Table -->
+<form name="attendance" method="POST" action="/attendance">
+    <div class="page">
+        <h1 id="atheading">Attendance  Table</h1>
+        <table class="zebra">
+            <thead>
+                <tr>
+                    <th>PRN No</th>
+                    <th>Name</th>
+                    <th>Year</th>
+                    <th>Department</th>
+                    <th>Shift</th>
+                    <th>Attendance</th>
+                </tr>
+            </thead>
+            <tbody>
+                each vol in vols 
+                    tr
+                    td=vol.prn
+                    td=vol.student_name
+                    td=vol.year
+                    td=vol.department
+                    td=vol.shift
+                        <td class="actions">
+                            <input  class="atten"  type="checkbox" name= "present" value = "#{ vol.prn }" >
+                              
+                        </td>
+            </tbody>
+        </table>
+        each act in acts
+            <button class="btn" id="submit" name="submit" value="#{ act.activity_no }" onclick="alert (' Attendance has been recorded '); "><span>SUBMIT</span></button>
+    </div>
+    
+    
+</form>
+</body>
+</html>

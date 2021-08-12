@@ -1,0 +1,126 @@
+.navbar-brand{
+    /* transition: 0.5s; */
+    color: rgb(255, 255, 255);
+  
+  }
+  .navbar-brand:hover{
+    color : rgb(255, 255, 255);
+    /* font-size: 140%; */
+    font-weight: bold;
+  
+  }
+  
+  .nav-link{
+    color: rgb(252, 252, 252);
+  }
+  
+  .nav-link:hover{
+    color: rgb(238, 255, 0);
+    transition: 0.2s;
+  }
+  
+#middle{
+    background-color:  #09104e;
+    height: 90rem;
+}
+
+
+#header
+{
+    background: #09104e;
+    padding: 10px;
+    /* border: 3px solid yellow; */
+    width:100%;
+    height:auto;
+    color:rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serifS;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.form-style{
+    font-family: 'Open Sans Condensed', arial, sans;
+    width: 800px;
+    padding: 30px;
+    background: #FFFFFF;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0,0,0,0.22);
+    -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.22);
+}
+
+.form-style h2{
+    background: #ff0000;
+    font-family: 'Open Sans Condensed',  sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 20px;
+    margin: -30px -30px 30px -30px;
+}
+
+.form-style .textarea-field{
+    height: 100px;
+    width: 230px;
+    border-radius: 5px;
+}
+
+.input-group{
+    margin: 10px 0px 10px 0px;
+}
+
+.input-group input{
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.input-group select{
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+#submit{
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 20px;
+    width: 90px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: red;
+}
+
+#submit:hover{
+    background-color: #101966;
+    color: white;
+    border: 1px solid white;
+}
+#reset{
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 20px;
+    width: 90px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: red;
+}
+
+#reset:hover{
+    background-color: #101966;
+    color: white;
+    border: 1px solid white;
+}
+
+.error{
+    color: white;
+}
+

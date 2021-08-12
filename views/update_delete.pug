@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPDATE</title>
+    <link rel="stylesheet" href="css/update_delete.css">
+    <link rel="script" href="js/activity.js">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+
+
+<body style=" background-color: #02052e;">
+
+<!-- Navigation Bar -->
+
+
+        <div class="sticky-top">
+            <nav class="navbar navbar-expand-lg" style="background-color: #050936; height: max-content; z-index: 3;">
+                <a class="navbar-brand">NSS MCOE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="/homepage">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/activity">Attendance</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/display_menu">Display</a>
+              </li>
+              </ul>
+            </div>
+            </nav>
+        </div>
+
+<!-- Table -->
+<form name="update" method="POST" action="/update_delete">
+    <div class="page">
+        <h1>Update And Delete</h1>
+        <table class="layout display responsive-table">
+            <thead>
+                <tr>
+                    <th>PRN No</th>
+                    <th>Name</th>
+                    <th>Year</th>
+                    <th>Department</th>
+                    <th>Shift</th>
+                    <th>Update and Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                each vol in vols 
+                    tr
+                    td=vol.prn
+                    td=vol.student_name
+                    td=vol.year
+                    td=vol.department
+                    td=vol.shift
+                        <td class="actions">
+                              <button type="submit" name="update" class="btn btn-outline-primary " onclick=" return confirm('Do you want to Update?')" value="#{ vol.prn }">Update</button>
+                              <button type="submit" name="delete" class="btn btn-outline-danger " onclick=" return confirm('Do you want to Delete?')" value="#{ vol.prn }">Delete</button>
+                        </td>
+            </tbody>
+        </table>
+    </div>    
+</form>
+</body>
+</html>

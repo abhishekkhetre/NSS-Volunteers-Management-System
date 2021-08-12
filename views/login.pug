@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  style
+    include ../public/css/bootstrap.css
+    include ../public/css/login.css
+  
+  <title>NSS Management System login</title>
+</head>
+
+<body>
+  if (error)
+      <div class="alert alert-danger" role="alert" style="text-align: center;"> #{error}</div>
+  if (message)
+      <div class="alert alert-success" role="alert" style="text-align: center;"> #{message}</div>
+
+  <div class="container">
+    <img src="./images/nsslogo.jpg" alt="nsslogo" class="image" style="width:100%">
+    <div class="middle">
+      <div class="text">
+        <h2 id="admintitle">ADMIN LOGIN</h2>
+        <h6 class="card-subtitle mb-2 text-muted" id="adminsubtitle">Enter Login Credentials</h6>
+        <form name="frmRecord" method="POST" onsubmit=" return validateForm(); " action="/" class="loginform" style="margin-top: 8px;">
+          |Id : <input type="text" id="myId" placeholder="Enter Id" name="username" autocomplete="off">
+          |Password : <input type="password" id="myPass" placeholder="Enter Password" name="password" autocomplete="off">
+          <button type="submit" class="button"><span>Login</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  script
+    include ../public/js/login.js
+</body>
+
+</html>

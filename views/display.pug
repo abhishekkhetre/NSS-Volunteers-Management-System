@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Volunteers Data</title>
+    <link rel="stylesheet" href="css/display.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body style=" background-color: #02052e;">
+    <div id="middle">
+
+        <div class="sticky-top">
+            <nav class="navbar navbar-expand-lg" style="background-color: #050936; height: max-content; z-index: 3;">
+                <a class="navbar-brand">NSS MCOE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/homepage">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/activity">Attendance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/display_menu">Display</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="tophead">
+        <p style="align-self: center">
+        <h2 style="color:white; margin:40px auto">VOLUNTEER DETAILS</h2>
+        <input type="text" name="" id="search" placeholder="Search Volunteers" onkeyup="searchname()">
+        </p>
+    </div>
+
+
+
+
+    <table class='zebra' id='mytable'>
+        <thead>
+            <tr id="top">
+                <th>PRN</th>
+                <th>Eligibility No</th>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Year</th>
+                <th>Shift</th>
+                <th>Designation</th>
+                <th>Aadhar No</th>
+                <th>Gender</th>
+                <th>Email Id</th>
+                <th>Whatsapp No</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        each item in items
+            <tr>
+                td=item.prn
+                td=item.eligibility_no
+                td=item.roll_no
+                td=item.student_name
+                td=item.department
+                td=item.year
+                td=item.shift
+                td=item.designation
+                td=item.aadhaar_no
+                td=item.gender
+                td=item.email_id
+                td=item.whatsapp_no
+                td=item.category
+            </tr>
+    </table>
+    <script src="js/display.js"></script>
+</body>
+
+</html>
